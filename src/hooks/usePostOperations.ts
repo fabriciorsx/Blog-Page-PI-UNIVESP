@@ -1,4 +1,4 @@
-import { Post, TabType } from '../types/dashboard';
+import { Post, TabType } from '@/lib/types/dashboard';
 
 interface UsePostOperationsProps {
   posts: Post[];

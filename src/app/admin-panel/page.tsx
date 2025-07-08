@@ -7,10 +7,10 @@ import AnalyticsTab from '../../components/admin/AnalyticsTab';
 import EditPostTab from '../../components/admin/EditPostTab';
 import LoadingSpinner from '../../components/admin/LoadingSpinner';
 import ErrorMessage from '../../components/admin/ErrorMessage';
-import { useBlogData } from './hooks/useBlogData';
-import { usePostOperations } from './hooks/usePostOperations';
-import { useCategoryOperations } from './hooks/useCategoryOperations';
-import { TabType, Post } from './types/dashboard';
+import { useBlogData } from '@/hooks/useBlogData';
+import { usePostOperations } from '@/hooks/usePostOperations';
+import { useCategoryOperations } from '@/hooks/useCategoryOperations';
+import { TabType, Post } from '@/lib/types/dashboard';
 
 export default function BlogDashboard() {
   const [activeTab, setActiveTab] = useState<TabType>("posts");
