@@ -1,6 +1,6 @@
 import { Calendar, Edit, Trash2 } from 'lucide-react';
 import DOMPurify from "isomorphic-dompurify";
-import { Post, Category } from '../../app/admin-panel/types/dashboard';
+import { Post, Category } from "@/lib/types/dashboard";
 
 interface PostsTabProps {
   posts: Post[];
