@@ -50,11 +50,11 @@ export default function BlogDashboard() {
   }
 
   return (
-    <div className="max-w-full mx-auto p-4 min-h-screen">
+    <div className=" max-w-full mx-auto p-8 min-h-screen ">
       <header className="mb-8">
         <h1 className="text-2xl font-bold text-gray-800">Administração de posts</h1>
         <nav className="border-b border-gray-200 mt-4">
-          <div className="flex -mb-px">
+          <div className="flex -mb-px justify-center">
             <TabButton
               active={activeTab === 'posts'}
               onClick={() => { setActiveTab('posts'); setEditingPost(null); }}

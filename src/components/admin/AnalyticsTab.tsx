@@ -1,5 +1,5 @@
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
-import { Post, Category } from '../../app/admin-panel/types/dashboard';
+import { Post, Category } from '@/lib/types/dashboard';
 
 interface AnalyticsTabProps {
   posts: Post[];
@@ -58,7 +58,8 @@ function CategoryChart({ data }: CategoryChartProps) {
       <h3 className="text-md font-medium mb-4">Posts por Categoria</h3>
       <div className="h-64 bg-gray-50 p-4 border border-gray-200 rounded-lg">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={data}>
+          <BarChart data={data}
+          margin={{left: -40,}}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
             <YAxis allowDecimals={false} />
